@@ -149,7 +149,7 @@ async def status(update: Update, context: CallbackContext):
     )
 
 async def startliga(update: Update, context: CallbackContext):
-    if update.effective_user.id != 123456789:  # Ganti dengan ID admin
+    if update.effective_user.id != 7621771510:  # Ganti dengan ID admin
         await update.message.reply_text("Hanya admin.")
         return
     set_league_week(1, datetime.now())
